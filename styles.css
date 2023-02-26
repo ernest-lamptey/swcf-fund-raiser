@@ -46,7 +46,7 @@ p {
     flex-direction: column;
     z-index: -2;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     justify-content: center;
     background: linear-gradient(135deg,rgba(252, 0, 255, 0.2),rgb(0, 219, 222, 0.3));

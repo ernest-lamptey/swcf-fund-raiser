@@ -30,6 +30,20 @@
 
 .semibold {
     font-weight: 600;
+    text-align: center;
+}
+
+.number {
+    font-weight: 600; 
+}
+
+.appreciation {
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.caption {
+    text-align: center;
 }
 
 p {
@@ -60,13 +74,15 @@ p {
 }
 
 .main {
-    margin: 1.8rem 0;
+    margin: 1.8rem auto 0;
     width: 100%;
+    max-width: 800px;
     min-height: 75vh;
     padding: 0 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* margin: 0 auto; */
     /* background-color: yellow; */
 }
 
@@ -127,3 +143,17 @@ p {
     margin-top: 2rem;
 }
 
+@media (max-width: 480px) {
+    .caption {
+        text-align: left;
+    }
+
+    .semibold {
+        text-align: left;
+    }
+
+    .appreciation {
+        text-align: left;
+
+    }
+}

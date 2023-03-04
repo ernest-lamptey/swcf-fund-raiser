@@ -134,7 +134,7 @@ p {
 }
 
 #bar {
-    width: 5%;
+    width: 0%;
     height: 1rem;
     background: rgb(252, 0, 255);  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */

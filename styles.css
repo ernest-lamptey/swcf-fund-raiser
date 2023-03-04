@@ -146,6 +146,11 @@ p {
     font-weight: bold;
 }
 
+#last-donation {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
 .footer {
     /* position: fixed; */
     align-self: center;

@@ -118,6 +118,11 @@ p {
     text-align: center;
 }
 
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
 .goal {
     font-weight: 600;
     font-size: 1.2rem;
@@ -135,6 +140,10 @@ p {
     background: -webkit-linear-gradient(to left, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+#amountRaised {
+    font-weight: bold;
 }
 
 .footer {
@@ -155,5 +164,9 @@ p {
     .appreciation {
         text-align: left;
 
+    }
+
+    .details {
+        flex-direction: column;
     }
 }

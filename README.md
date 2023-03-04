@@ -6,6 +6,7 @@ This website is a promotion for the funds that we as SWCF Alumni want to raise t
 - Plain old HTML
 - Plain old CSS
 - Plain old Javascript
+- Connecting to spreadsheet via [OpenSheet](https://github.com/benborgers/opensheet#readme)
 
 ## Upcoming Features
 - Connect progress bar to read balance from Google sheet

@@ -9,10 +9,11 @@
 }
 
 .bg-pattern {
-    position: absolute;
+    position: fixed;
     z-index: -1;
-    height: 100%;
-    width: 100%;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
     background-image: url('./assets/pattern.svg');
     background-size: cover;
     background-attachment: fixed;
@@ -37,11 +38,6 @@
     font-weight: 600; 
 }
 
-.appreciation {
-    text-align: center;
-    margin-bottom: 1.2rem;
-}
-
 .caption {
     text-align: center;
 }
@@ -49,6 +45,14 @@
 p {
     font-size: 1rem;
     line-height: 150%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ececec;
+    padding: 0.8rem 1.2rem;
 }
 
 .heading {
@@ -59,31 +63,29 @@ p {
     display: flex;
     flex-direction: column;
     z-index: -2;
+    max-width: 480px;
     width: 100vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg,rgba(252, 0, 255, 0.2),rgb(0, 219, 222, 0.3));
+    margin:0 auto;
+    /* background: linear-gradient(135deg,rgba(252, 0, 255, 0.2),rgb(0, 219, 222, 0.3)); */
 }
 
 .square {
-    margin-top: 2rem;
-    margin-left: 1.2rem;
     width: 1rem;
     height: 1rem;
 }
 
 .main {
-    margin: 1.8rem auto 0;
+    margin: 0.4rem auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 480px;
     min-height: 75vh;
     padding: 0 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* margin: 0 auto; */
-    /* background-color: yellow; */
 }
 
 .main-text{
@@ -102,15 +104,76 @@ p {
     border-radius: 1rem;
 }
 
-.momo-info {
+.button {
     align-self: center;
-    text-align: center;
-    width: 75%;
+    min-width: 75%;
+    font-weight: bold;
+    font-size: 1rem;
     border: 2px solid #222222;
-    padding: 1.6rem 0;
-    background-color:#00dbde;
+    padding: 1rem 1.6rem;
+    background-color:#f7c505;
     border-radius: 1rem;
     margin-bottom: 2rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #ffd735;
+}
+
+.payment-modal {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #989898dc;
+    display: flex;
+    justify-content: center;
+}
+
+.donation-form {
+    max-width: 300px;
+    height: fit-content;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 1.4rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donation-form h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.donation-form label {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.donation-form input {
+    width: 75%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.donation-form p {
+    width: 75%;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.donation-form span {
+    font-weight: bold;
+    font-size: 1.4rem;
+    
 }
 
 .stats {
@@ -139,7 +202,6 @@ p {
     background: rgb(252, 0, 255);  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 #amountRaised {
@@ -154,7 +216,7 @@ p {
 .footer {
     /* position: fixed; */
     align-self: center;
-    margin-top: 2rem;
+    margin: 2rem auto;
 }
 
 @media (max-width: 480px) {

@@ -28,3 +28,19 @@ fetch(URL)
         document.getElementById("last-donation").innerHTML = `${lastDonation} was donated on ${lastDonationDate} &#128151;`
         document.getElementById("days-left").innerHTML = `${daysleft} days more`
     })
+
+const showForm = document.getElementById("show-donation-form")
+const paymentModal =     document.getElementById("payment-modal")
+
+showForm.addEventListener("click", (e) => {
+    console.log(e.target.value)
+    paymentModal.style.visibility = "visible";
+})
+
+const form = document.getElementById("donation-form")
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    const amount = parseFloat(document.getElementById("pay-amount").value)
+    const mobileNumber = document.getElementById("mobile-number").value
+    console.log(amount, mobileNumber)
+})

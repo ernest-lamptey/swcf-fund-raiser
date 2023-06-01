@@ -38,6 +38,7 @@ showForm.addEventListener("click", (e) => {
 })
 
 const form = document.getElementById("donation-form")
+
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     const amount = parseFloat(document.getElementById("pay-amount").value)
